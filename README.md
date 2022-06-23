@@ -1,8 +1,8 @@
 # TestNG_AutomationExercise
 Automation Exercise 
-- [ X ] Test Case - 01
-- [ X ] Test Case - 02
-- [ X ] Test Case - 03
+- [X] Test Case - 01
+- [X] Test Case - 02
+- [X] Test Case - 03
 - [ ] Test Case - 04
 - [ ] Test Case - 05
 - [ ] Test Case - 06
