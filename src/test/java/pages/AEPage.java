@@ -11,10 +11,26 @@ public class AEPage {
             PageFactory.initElements(Driver.getDriver(),this);
         }
 
-
+//Login Page
     @FindBy(xpath="//*[@href='/login']")
     public WebElement firstSignupLoginButton;
 
+    @FindBy(xpath = "//*[text()='Login to your account']")
+    public WebElement loginToYourAccountText;
+
+    @FindBy(xpath = "(//*[@type='email'])[1]")
+    public WebElement loginEmail;
+
+    @FindBy(xpath = "(//*[@type='password'])[1]")
+    public WebElement loginPassword;
+
+    @FindBy(xpath = "(//*[@type='submit'])[1]")
+    public WebElement loginButton;
+
+    @FindBy(xpath = "//*[text()=\" Logged in as \"]/b")
+    public WebElement loggedInName;
+
+//Sign Up Page
     @FindBy(xpath ="//*[@data-qa='signup-name']")
     public WebElement name;
 
@@ -81,8 +97,17 @@ public class AEPage {
     @FindBy(className = "//*[@data-qa='continue-button']")
     public WebElement continueButton;
 
+//Delete Account
     @FindBy(xpath = "//*[@href='/delete_account']")
     public WebElement deleteAccount;
+
+    @FindBy(xpath = "//*[text()=\"Delete\"]")
+    public WebElement secondDeleteButton;
+
+    @FindBy(xpath = "(//*[text()=\"Delete Account\"])[2]")
+    public WebElement DeleteAccountText;
+
+
 
 }
 
