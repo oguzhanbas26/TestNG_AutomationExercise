@@ -111,6 +111,39 @@ public class AEPage {
     @FindBy (xpath = "//*[(text()=' Logout')]")
     public WebElement logoutButton;
 
+//ContactUs Button
+    @FindBy (xpath = "//*[(text()=' Contact us')]")
+    public WebElement contactusButton;
+
+    @FindBy (xpath = "//*[(text()='Get In Touch')]")
+    public WebElement getInTouchText;
+
+    @FindBy (xpath = "//*[@data-qa='name']")
+    public WebElement NameTextBox;
+
+    @FindBy (xpath = "//*[@data-qa='email']")
+    public WebElement EmailTextBox;
+
+    @FindBy (xpath = "//*[@data-qa='subject']")
+    public WebElement SubjectTextBox;
+
+    @FindBy (xpath = "//*[@data-qa='message']")
+    public WebElement MessageTextBox;
+
+    @FindBy (xpath = "//*[@name='upload_file']")
+    public WebElement ChooseFileButton;
+
+    @FindBy (xpath = "//*[@data-qa='submit-button']")
+    public WebElement SubmitButton;
+
+    @FindBy (xpath = "//*[@class=\"status alert alert-success\"]")
+    public WebElement SuccessMessage;
+
+    @FindBy (xpath = "//*[(text()=' Home')]")
+    public WebElement HomeButtontoReturn;
+
+
+
 
 }
 
