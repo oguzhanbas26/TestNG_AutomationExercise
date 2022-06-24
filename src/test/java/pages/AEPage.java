@@ -142,8 +142,34 @@ public class AEPage {
     @FindBy (xpath = "//*[(text()=' Home')]")
     public WebElement HomeButtontoReturn;
 
+// Verify All Products
+    @FindBy (xpath = "//*[(text()=' Products')]")
+    public WebElement ProductsButton;
+
+    @FindBy (xpath = "//*[(text()='All Products')]")
+    public WebElement AllProductsText;
+
+    @FindBy (xpath = "(//*[(text()='View Product')])[1]")
+    public WebElement FirstViewProduct;
+
+    @FindBy (xpath = "//*[contains(text(),'Blue Top')]")
+    public WebElement pname1;
 
 
+    @FindBy (xpath = "//*[contains(text(),'Women')]")
+    public WebElement category1;
+
+    @FindBy (xpath = "//*[contains(text(),'Rs. 500')]")
+    public WebElement price1;
+
+    @FindBy (xpath = "//*[contains(text(),'In Stock')]")
+    public WebElement availability1;
+
+    @FindBy (xpath = "//*[contains(text(),' New')]")
+    public WebElement condition1;
+
+    @FindBy (xpath = "//*[contains(text(),' Polo')]")
+    public WebElement brand1;
 
 }
 
