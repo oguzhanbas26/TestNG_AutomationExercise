@@ -107,6 +107,9 @@ public class AEPage {
     @FindBy(xpath = "(//*[text()=\"Delete Account\"])[2]")
     public WebElement DeleteAccountText;
 
+//Logout Button
+    @FindBy (xpath = "//*[(text()=' Logout')]")
+    public WebElement logoutButton;
 
 
 }
